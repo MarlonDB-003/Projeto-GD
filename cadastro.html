@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style_cadastro.css">
+</head>
+
+<body class="bodycadastro">
+    <main class="containercadastro">
+        <div class="esquerda">
+            <div class="esquerda">
+                <img src="imagens/cadastro.png">
+
+            </div>
+            <div class="img">
+            </div>
+        </div>
+
+        <div class="direita">
+            <h1>Cadastro</h1>
+            <form id="signup-form">
+                <input type="text" id="name" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="text" id="end" placeholder="Endereco" required>
+                <input type="time" name="hora" id="hora" />
+                <input type="text" id="serv" placeholder="Servicos" required>
+                <input type="password" id="password" placeholder="Senha" required>
+
+                <div>
+                    <div class="divbutton">
+                        <button type="submit" class="button">Cadastrar</button>
+                    </div>
+
+                    <div class="divbutton1">
+                        <a class="button" href="index.html">Voltar</a>
+                    </div>
+                </div>
+            </form>
+
+            <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+            <script src="app.js"></script>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

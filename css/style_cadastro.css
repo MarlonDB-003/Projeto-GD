@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodycadastro {
+    font: 400 1rem var(--body-font);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    background: var(--base-color-second);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containercadastro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 10px;
+}
+
+.input-field label {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #FF9999;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+button {
+    margin: 5%;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border-width: 1px;
+    border: solid;
+    border-radius: 10px;
+    border-color: #FF9999;
+}
+
+.img {
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.direita {
+    width: 500px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+}
+
+.esquerda {
+    float: left;
+}
+
+.divbutton {
+    float: left;
+    display: inline;
+    margin-left: 18%;
+}
+
+.divbutton1 {
+    float: left;
+    display: inline;
+    margin-left: 10%;
+    margin-top: 7px;
+}

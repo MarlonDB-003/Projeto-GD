@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  STYLES  -->
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--  FONTS  -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <title>Login</title>
+</head>
+
+<body class="bodylogin">
+
+    <main class="containerlogin">
+        <div class="esquerda">
+            <div class="esquerda">
+                <img src="imagens/gestantelogin.png">
+
+            </div>
+            <div class="img">
+            </div>
+        </div>
+
+        <div class="direita">
+            <h2>Login</h2>
+
+            <form id="formulario" method="POST">
+
+                <div class="input-field">
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()" />
+                    <div class="error" id="email-required-error">Email é obrigatório</div>
+                    <div class="error" id="email-invalid-error">Email é inválido</div>
+
+                </div>
+                <div class="input-field">
+                    <label>Senha</label>
+                    <input type="password" name="password" id="senha" placeholder="senha" onchange="onChangePassword()" />
+                    <div class="error" id="password-required-error">Senha é obrigatória</div>
+                    <button type="button" class="clear" id="recover-password-button" disabled="true"></button>
+
+                </div>
+                <div class="cad-rec">
+                    <a href="cadastro.html">Cadastre-se</a>
+                    <a href="">Recuperar Senha</a>
+                </div>
+                </br>
+
+                <div>
+                    <div class="divbutton">
+                        <button type="button" class="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+                    </div>
+
+                    <div class="divbutton">
+                        <a class="button" href="index.html">Voltar</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+<script src="login.js"></script>
+<script src="loading.js"></script>
+<script src="validations.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+
+<script src="firebase-init.js"></script>
+
+</html>

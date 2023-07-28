@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodylogin {
+    font: 400 1rem var(--body-font);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    background: var(--base-color-second);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerlogin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+span {
+    color: var(--base-color);
+}
+
+.direita {
+    width: 500px;
+}
+
+.direita h2 {
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: justify;
+    font: 700 2rem var(--title-font);
+    font-size: 1.5em;
+    color: #FF9999;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    width: 100%;
+    height: 40px;
+}
+
+#senha {
+    width: 100%;
+    height: 40px;
+}
+
+input {
+    border-width: 1px;
+    border: solid;
+    border-radius: 10px;
+    border-color: #FF9999;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field label {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #FF9999;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+    color: white;
+    height: 2rem;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 30px auto;
+    max-width: 200px;
+    border-radius: 0.25rem;
+    font: 500 1rem var(--body-font);
+    transition: background 0.3s;
+    height: 40px;
+    background-color: #FF9999;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background: var(--base-color-alt);
+    color: black;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1em;
+    color: var(--title-color);
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    color: #FF9999;
+    font-size: 18px;
+    text-align: right;
+}
+
+a:hover {
+    color: var(--base-color-alt);
+}
+
+.img {
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.img img {
+    width: 40px;
+    height: 40px;
+}
+
+.cad-rec {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50px;
+    margin-left: 70%;
+}
